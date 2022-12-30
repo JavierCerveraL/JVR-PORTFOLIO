@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+
+import { TypeAnimation } from 'react-type-animation';
+
+class MyComponent extends Component {
+  render() {
+    return (
+      <div>
+        <TypeAnimation strings={['Welcome, click anywhere']} typeSpeed={60} />
+        <br />
+
+        <TypeAnimation
+          strings={['Web Development', 'Web Design', 'Webrything']}
+          startDelay={3500}
+          shuffle={true}
+          typeSpeed={40}
+          backSpeed={80}
+          loop
+        >
+          <input
+            className="bg-transparent text-center	text-red-500"
+            type="text"
+          />
+        </TypeAnimation>
+      </div>
+    );
+  }
+}
+
+export default MyComponent;
